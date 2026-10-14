@@ -1,0 +1,11 @@
+﻿id,category,question,answerable,expected_page,retrieved_pages,rank,retrieval_hit,keyword_hit,refused,diagnosis,answer,human_grade
+1,factual,Who are the authors of the paper?,yes,1,,,no,no,yes,FAIL: retrieval (right page not retrieved),I could not find this in the document.,
+2,factual,What is the sample period and frequency of the data used in the paper?,yes,12,,,no,no,yes,FAIL: retrieval (right page not retrieved),I could not find this in the document.,
+3,factual,How do the authors measure geopolitical risk?,yes,12,,,no,no,yes,FAIL: retrieval (right page not retrieved),I could not find this in the document.,
+4,factual,"Which category of gold buyers does the analysis focus on, and why?",yes,28,,,no,no,no,FAIL: retrieval (right page not retrieved),"The analysis focuses on the category of gold buyers that are interested in gold as an investment, due to its potential to act as a hedge against inflation and currency devaluation (p. 1).",
+5,synthesis,How quickly does gold react to geopolitical threats compared with geopolitical events?,yes,14,,,no,no,yes,FAIL: retrieval (right page not retrieved),I could not find this in the document.,
+6,numeric,"What is the peak cumulative effect of geopolitical events on gold returns in the low-risk state, and when does it occur?",yes,23,,,no,no,yes,FAIL: retrieval (right page not retrieved),I could not find this in the document.,
+7,misattribution,What methods do the authors use?,yes,,,,n/a,n/a,yes,FAIL: refused although answerable,I could not find this in the document.,
+8,vague,What data and methods do the authors use?,yes,12,,,no,no,yes,FAIL: retrieval (right page not retrieved),I could not find this in the document.,
+9,out_of_scope,What is the capital of France?,no,,,,n/a,n/a,yes,pass,I could not find this in the document.,
+10,out_of_scope,Who is the current RBI governor?,no,,,,n/a,n/a,yes,pass,I could not find this in the document.,

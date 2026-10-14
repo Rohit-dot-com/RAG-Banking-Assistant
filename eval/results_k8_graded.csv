@@ -1,0 +1,3 @@
+﻿id,category,question,answerable,expected_page,retrieved_pages,rank,retrieval_hit,keyword_hit,refused,diagnosis,answer,human_grade
+1,factual,Who are the authors of the paper?,yes,1;3,"3, 1, 12, 2, 4, 29, 8",1,yes,yes,no,pass,The authors of the paper are Rafael Guerra and Gabriel Zelpo (p. 1).,"1, 0.5, 0"
+2,factual,What is the sample period and frequency of the data used in the paper?,yes,12,"31, 7, 5, 2, 19, 12, 28, 39",6,yes,yes,no,pass,The sample consists of monthly data covering January 1990 to March 2026 (p. 12).,

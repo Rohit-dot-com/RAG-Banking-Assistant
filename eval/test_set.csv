@@ -1,0 +1,19 @@
+id,category,question,expected_page,expected_keywords,answerable,notes
+1,factual,"Who are the authors of the paper?",1;3,Guerra;Zelpo,yes,"cover page and title page"
+2,factual,"What is the sample period and frequency of the data used in the paper?",12,1990;2026;monthly,yes,seen in the page 12 chunk
+3,factual,"How do the authors measure geopolitical risk?",12,Caldara;Iacoviello,yes,verify on page 12
+4,factual,"Which category of gold buyers does the analysis focus on, and why?",28,central bank;monthly,yes,footnote - verify page 28
+5,synthesis,"How quickly does gold react to geopolitical threats compared with geopolitical events?",14,months,yes,verify on page 14
+6,numeric,"In the credit and liquidity risk analysis, what is the peak cumulative effect of geopolitical events on gold returns when credit and liquidity risks are low, and when does it occur?",23,0.9,yes,"reworded to remove ambiguity"
+7,misattribution,"What methods do the authors use?",8;9;10;11,Local Projections,yes,"fail if the answer presents time-frequency or wavelet methods from page 7 as the authors own"
+8,vague,"What data and methods do the authors use?",12,1990,yes,vague wording stress test
+9,out_of_scope,"What is the capital of France?",,,no,
+10,out_of_scope,"Who is the current RBI governor?",,,no,
+11,factual,"What is the BIS Working Paper number of this paper?",1,1380,yes,cover page - verify
+12,factual,"How do the authors distinguish geopolitical threats from geopolitical events?",8;12;14,threats;events,yes,"definitions on page 12"
+13,factual,"Which estimation method and type of standard errors are used for the impulse responses?",27,Local Projections;Newey-West,yes,from a figure note - verify
+14,synthesis,"How does the response of gold to geopolitical shocks differ when credit and liquidity risks are high versus low?",23;32,credit,yes,"reworded to remove ambiguity"
+15,vague,"What does the paper find?",3;5;32;33,gold;geopolitical;loose,yes,"abstract, intro summary, conclusion"
+16,out_of_scope,"What does the paper conclude about Bitcoin as a safe-haven asset?",,,no,Ctrl+F Bitcoin first
+17,out_of_scope,"What gold price does the paper forecast for 2027?",,,no,Ctrl+F forecast first
+18,out_of_scope,"Which central bank bought the most gold in 2025?",,,no,Ctrl+F first - the paper may mention it

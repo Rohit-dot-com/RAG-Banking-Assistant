@@ -1,0 +1,7 @@
+venv/
+.env
+chroma_db/
+__pycache__/
+data/*.pdf
+eval/answer_cache.json
+.streamlit/secrets.toml
