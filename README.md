@@ -24,8 +24,8 @@ Retrieval only (is a correct page among the retrieved chunks? 13 answerable ques
 | 5 | 11/13 |
 | 8 | 12/13 |
 
-Full pipeline at k=8, graded by hand: 13/18 average score (92% answers fully correct).
-Out-of-scope questions correctly refused: 5/5 (100%).
+Full pipeline at k=8, graded by hand. 13 of 18 questions completed so far (the other 5 are waiting on the free-tier daily request limit) : average score 0.53486 out of 1, with 10 of 13 answers fully correct.
+Out-of-scope questions correctly refused: 2/2(3 more to run).
 
 ## Findings
 - k=3 missed answers that are spread across several pages. k=8 recovered most of them.
@@ -66,5 +66,4 @@ python evaluate.py 8
 - `eval/`: test set, results and test log
 
 ## Author
-Rohit Kumar Yadav: (https://www.linkedin.com/in/rky197/) 
-                   (https://github.com/Rohit-dot-com)
+Rohit Kumar Yadav: [LinkedIn](https://www.linkedin.com/in/rky197/) | [GitHub](https://github.com/Rohit-dot-com)
