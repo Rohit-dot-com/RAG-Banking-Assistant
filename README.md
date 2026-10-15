@@ -3,6 +3,7 @@
 A "chat with your PDF" app. It answers questions only from the uploaded document and cites page numbers. Built with LangChain, Chroma, Hugging Face embeddings, Google Gemini and Streamlit.
 
 Test document: BIS Working Paper No 1380 (public, available on bis.org). The PDF is not included in this repo.
+![App screenshot](docs/app_screenshot.png)
 
 ## How it works
 1. Load the PDF page by page (PyPDFLoader)
