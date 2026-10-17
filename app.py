@@ -61,7 +61,7 @@ def build_index(uploaded_file):
     finally:
         os.remove(tmp_path)
 
-    splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=150)
+    splitter = RecursiveCharacterTextSplitter(chunk_size=1200, chunk_overlap=200)
     chunks = splitter.split_documents(pages)
     if not chunks:
         return None, len(pages), 0

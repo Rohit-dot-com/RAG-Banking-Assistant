@@ -7,7 +7,7 @@ Test document: BIS Working Paper No 1380 (public, available on bis.org). The PDF
 
 ## How it works
 1. Load the PDF page by page (PyPDFLoader)
-2. Split into overlapping chunks (800 characters, 150 overlap)
+2. Split into overlapping chunks ([S] characters, [O] overlap; 110 chunks for the 44-page test paper)
 3. Embed each chunk with all-MiniLM-L6-v2 (384-dimensional vectors)
 4. Store the vectors in Chroma
 5. For each question, retrieve the top-k most similar chunks
@@ -25,7 +25,7 @@ Retrieval only (is a correct page among the retrieved chunks? 13 answerable ques
 | 5 | 11/13 |
 | 8 | 12/13 |
 
-Full pipeline at k=8, graded by hand on all 18 questions: average score 0.7222 out of 1, with 13 of 18 answers fully correct.
+Full pipeline at k=8, graded by hand on all 18 questions: average score 0.94 out of 1 (16 of 18 answers fully correct, 2 partly correct).
 Out-of-scope questions correctly refused: 5/5.
 
 ## Findings
@@ -34,6 +34,7 @@ Out-of-scope questions correctly refused: 5/5.
 - Hardest case: "What methods do the authors use?" The literature review uses the word "methods" heavily, so the retriever misses the authors' own method section (pages 9 to 11). I kept this question in the test set as a known limitation.
 - I added a prompt rule so the model does not present other researchers' work as the paper's own.
 - The model refused out-of-scope questions with the required sentence, even ones it could have answered from general knowledge.
+- The two chunk sizes tied on hit rate, but different questions failed at each. For example, the data sample-period question needed k=8 at [S]/[O]. I kept [S]/[O] because the full evaluation had already been run on it.
 
 ## Limitations
 - One document and 18 questions is a small sample. I tuned settings on the same questions, so the scores are likely optimistic.
